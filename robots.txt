@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tomo.codes/sitemap.xml
+Sitemap: https://giuliano.work/sitemap.xml
