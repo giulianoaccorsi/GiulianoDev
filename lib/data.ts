@@ -28,7 +28,7 @@ export const PROJECTS: Project[] = [
   },
   {
     name: "PokeStudy",
-    description: "Pokemon info app — browse and study Pokemon data.",
+    description: "Pokémon info app — browse and study Pokémon data.",
     tech: ["SwiftUI", "MVVM", "Combine", "Unit Testing"],
     githubUrl: "https://github.com/giulianoaccorsi/PokeStudyApp",
   },

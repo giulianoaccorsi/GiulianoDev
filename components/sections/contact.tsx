@@ -38,7 +38,7 @@ export function Contact() {
             <a href={`mailto:${SOCIAL_LINKS.email}`} />
           }>
             <Mail className="mr-2 h-4 w-4" />
-            {SOCIAL_LINKS.email}
+            Send me an Email
           </Button>
         </div>
 
