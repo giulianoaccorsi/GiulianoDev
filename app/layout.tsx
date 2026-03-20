@@ -16,6 +16,11 @@ export const metadata: Metadata = {
     siteName: "Giuliano Accorsi",
     type: "website",
   },
+  icons: {
+    icon: "/media/favicons/favicon.png",
+    apple: "/media/favicons/apple-touch-icon.png",
+  },
+  manifest: "/media/favicons/site.webmanifest",
 };
 
 export default function RootLayout({
