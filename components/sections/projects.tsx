@@ -89,6 +89,7 @@ export function Projects() {
                     <Button
                       variant="outline"
                       size="sm"
+                      nativeButton={false}
                       render={
                         <a
                           href={project.appStoreUrl}
@@ -105,6 +106,7 @@ export function Projects() {
                     <Button
                       variant="outline"
                       size="sm"
+                      nativeButton={false}
                       render={
                         <a
                           href={project.githubUrl}

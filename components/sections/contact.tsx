@@ -34,7 +34,7 @@ export function Contact() {
 
         {/* Email button with glow */}
         <div className="mb-8">
-          <Button size="lg" className="animate-glow-pulse" render={
+          <Button size="lg" className="animate-glow-pulse" nativeButton={false} render={
             <a href={`mailto:${SOCIAL_LINKS.email}`} />
           }>
             <Mail className="mr-2 h-4 w-4" />
