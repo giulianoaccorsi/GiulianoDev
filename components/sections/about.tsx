@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export function About() {
   return (
@@ -36,12 +37,20 @@ export function About() {
             </p>
           </div>
 
-          {/* Image placeholder */}
+          {/* Profile photo */}
           <motion.div
             whileHover={{ scale: 1.02 }}
             transition={{ type: "spring", stiffness: 300 }}
-            className="aspect-square w-full rounded-lg bg-muted shadow-lg md:w-48 md:shrink-0"
-          />
+            className="aspect-square w-full overflow-hidden rounded-lg shadow-lg md:w-48 md:shrink-0"
+          >
+            <Image
+              src="/media/profile.jpeg"
+              alt="Giuliano Accorsi"
+              width={192}
+              height={192}
+              className="h-full w-full object-cover"
+            />
+          </motion.div>
         </div>
       </motion.div>
     </section>

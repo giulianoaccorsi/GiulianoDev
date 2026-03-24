@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ExternalLink, Github } from "lucide-react";
+import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { PROJECTS } from "@/lib/data";
@@ -46,21 +46,48 @@ export function Projects() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.6 }}
-              className="overflow-hidden rounded-xl border bg-card"
+              className={`overflow-hidden rounded-xl border bg-card ${
+                project.video ? "flex flex-col md:flex-row" : ""
+              }`}
             >
               {/* Demo area */}
-              <motion.div
-                whileHover={{ scale: 1.02 }}
-                transition={{ type: "spring", stiffness: 300 }}
-                className="flex aspect-video items-center justify-center bg-muted"
-              >
-                <span className="text-sm text-muted-foreground">
-                  Screenshot / Video / GIF
-                </span>
-              </motion.div>
+              {project.video ? (
+                <div className="flex shrink-0 items-center justify-center p-6 md:w-80 md:p-8">
+                  <video
+                    src={project.video}
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="h-auto max-h-[480px] rounded-xl shadow-2xl"
+                  />
+                </div>
+              ) : (project.image ? (
+                <motion.div
+                  whileHover={{ scale: 1.02 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                  className="flex aspect-video items-center justify-center overflow-hidden bg-muted"
+                >
+                  <Image
+                    src={project.image}
+                    alt={`${project.name} screenshot`}
+                    width={800}
+                    height={450}
+                    className="h-full w-full object-cover"
+                  />
+                </motion.div>
+              ) : (
+                <div className="flex aspect-video items-center justify-center bg-muted">
+                  <span className="text-sm text-muted-foreground">
+                    Screenshot / Video / GIF
+                  </span>
+                </div>
+              ))}
 
               {/* Content */}
-              <div className="p-6">
+              <div className={`flex flex-1 flex-col justify-center p-6 ${
+                project.video ? "md:pl-2 md:pr-8" : ""
+              }`}>
                 <h3 className="mb-2 text-xl font-semibold text-foreground">
                   {project.name}
                 </h3>
@@ -86,38 +113,34 @@ export function Projects() {
                 {/* Link buttons */}
                 <div className="flex flex-wrap gap-3">
                   {project.appStoreUrl && (
-                    <Button
-                      variant="outline"
-                      size="sm"
-                      nativeButton={false}
-                      render={
-                        <a
-                          href={project.appStoreUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        />
-                      }
+                    <a
+                      href={project.appStoreUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
-                      <ExternalLink className="mr-1.5 h-4 w-4" />
-                      App Store
-                    </Button>
+                      <Image
+                        src="/media/app-store-badge.svg"
+                        alt="Download on the App Store"
+                        width={120}
+                        height={40}
+                        className="transition-opacity hover:opacity-80"
+                      />
+                    </a>
                   )}
                   {project.githubUrl && (
-                    <Button
-                      variant="outline"
-                      size="sm"
-                      nativeButton={false}
-                      render={
-                        <a
-                          href={project.githubUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        />
-                      }
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
-                      <Github className="mr-1.5 h-4 w-4" />
-                      GitHub
-                    </Button>
+                      <Image
+                        src="/media/github-badge.png"
+                        alt="Available on GitHub"
+                        width={120}
+                        height={40}
+                        className="transition-opacity hover:opacity-80"
+                      />
+                    </a>
                   )}
                 </div>
               </div>

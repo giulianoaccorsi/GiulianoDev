@@ -21,6 +21,21 @@ const ICON_MAP: Record<string, { path: string; hex: string }> = {
   Firebase: siFirebase,
 };
 
+const EMOJI_MAP: Record<string, string> = {
+  Combine: "🔗",
+  "@Observable": "👁",
+  Riverpod: "🌊",
+  MVVM: "🧱",
+  "Clean Architecture": "🏛",
+  Coordinator: "🧭",
+  Modular: "📦",
+  SPM: "📎",
+  Tuist: "🛠",
+  XCTest: "✅",
+  "Unit Testing": "🧪",
+  Fixtures: "🔩",
+};
+
 const containerVariants = {
   hidden: {},
   visible: {
@@ -68,6 +83,7 @@ export function TechStack() {
             >
               {category.items.map((tech) => {
                 const icon = ICON_MAP[tech];
+                const emoji = EMOJI_MAP[tech];
                 return (
                   <motion.div
                     key={tech}
@@ -80,7 +96,7 @@ export function TechStack() {
                     }}
                     className="flex items-center gap-3 rounded-lg border bg-card p-4 transition-colors"
                   >
-                    {icon && (
+                    {icon ? (
                       <svg
                         role="img"
                         viewBox="0 0 24 24"
@@ -89,7 +105,9 @@ export function TechStack() {
                       >
                         <path d={icon.path} />
                       </svg>
-                    )}
+                    ) : emoji ? (
+                      <span className="text-base leading-none">{emoji}</span>
+                    ) : null}
                     <span className="text-sm font-medium text-foreground">
                       {tech}
                     </span>

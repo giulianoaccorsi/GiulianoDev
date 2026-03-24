@@ -11,15 +11,17 @@ export type Project = {
   appStoreUrl?: string;
   githubUrl?: string;
   image?: string;
+  video?: string;
 };
 
 export const PROJECTS: Project[] = [
   {
     name: "PaySplit",
-    description: "Bill splitting app for iOS — easily divide expenses with friends.",
-    tech: ["SwiftUI", "MVVM", "Unit Testing"],
+    description:
+      "A bill splitting app that lets you assign items to each person, choose between equal or quantity-based splits, and generate a shareable receipt.",
+    tech: ["SwiftUI", "MVVM", "Coordinator", "@Observable", "Localization"],
     appStoreUrl: "https://apps.apple.com/us/app/spliteasy/id6751210761",
-    githubUrl: "https://github.com/giulianoaccorsi",
+    video: "/media/paysplit-demo.mp4",
   },
   {
     name: "Budly",
@@ -31,6 +33,7 @@ export const PROJECTS: Project[] = [
     description: "Pokémon info app — browse and study Pokémon data.",
     tech: ["SwiftUI", "MVVM", "Combine", "Unit Testing"],
     githubUrl: "https://github.com/giulianoaccorsi/PokeStudyApp",
+    image: "/media/pokestudy-screenshot.png",
   },
 ];
 
@@ -41,6 +44,8 @@ export type TechCategory = {
 
 export const TECH_STACK: TechCategory[] = [
   { label: "Mobile", items: ["Swift", "SwiftUI", "Flutter", "Dart"] },
-  { label: "Tools & Infra", items: ["Xcode", "Git", "Firebase", "CI/CD"] },
-  { label: "Architecture", items: ["MVVM", "Clean Architecture", "Unit Testing"] },
+  { label: "State", items: ["Combine", "@Observable", "Riverpod"] },
+  { label: "Architecture", items: ["MVVM", "Clean Architecture", "Coordinator", "Modular"] },
+  { label: "Tools & Infra", items: ["Xcode", "Git", "Firebase", "SPM", "Tuist"] },
+  { label: "Testing", items: ["XCTest", "Unit Testing", "Fixtures"] },
 ];
