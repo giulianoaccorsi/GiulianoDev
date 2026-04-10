@@ -17,7 +17,7 @@ export default function BudlyTermsOfUse() {
             Effective date: April 10, 2026
           </p>
           <p className="text-sm text-neutral-500">
-            Last updated: April 10, 2026
+            Last updated: April 11, 2026
           </p>
         </header>
 
@@ -69,13 +69,16 @@ export default function BudlyTermsOfUse() {
           <p>
             Prices may vary by region. The actual price displayed in the App
             Store at the time of purchase applies. Payment is charged to your
-            Apple ID account at the confirmation of purchase.
+            Apple ID account at the confirmation of purchase. All payments are
+            processed by Apple through your Apple ID. Budly does not collect or
+            store any payment or billing information.
           </p>
           <p>
             Subscriptions automatically renew unless canceled at least 24 hours
-            before the end of the current billing period. You can manage and
-            cancel your subscription at any time in your device&apos;s Settings
-            &gt; Apple ID &gt; Subscriptions.
+            before the end of the current billing period. Your account will be
+            charged for renewal within 24 hours prior to the end of the current
+            period. You can manage and cancel your subscription at any time in
+            your device&apos;s Settings &gt; Apple ID &gt; Subscriptions.
           </p>
         </section>
 
@@ -109,7 +112,26 @@ export default function BudlyTermsOfUse() {
 
         <section className="space-y-4">
           <h2 className="text-xl font-semibold text-white">
-            4. Account & Data
+            4. Refunds
+          </h2>
+          <p>
+            All purchases are processed by Apple. Refunds are handled by Apple
+            in accordance with their refund policy. To request a refund, visit{" "}
+            <a
+              href="https://reportaproblem.apple.com"
+              className="text-blue-400 underline hover:text-blue-300"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              reportaproblem.apple.com
+            </a>{" "}
+            or contact Apple Support. Budly does not process refunds directly.
+          </p>
+        </section>
+
+        <section className="space-y-4">
+          <h2 className="text-xl font-semibold text-white">
+            5. Account & Data
           </h2>
           <p>
             You are responsible for maintaining the confidentiality of your
@@ -136,7 +158,7 @@ export default function BudlyTermsOfUse() {
 
         <section className="space-y-4">
           <h2 className="text-xl font-semibold text-white">
-            5. Acceptable Use
+            6. Acceptable Use
           </h2>
           <p>
             Budly is intended for personal, non-commercial expense tracking. You
@@ -160,7 +182,7 @@ export default function BudlyTermsOfUse() {
 
         <section className="space-y-4">
           <h2 className="text-xl font-semibold text-white">
-            6. Intellectual Property
+            7. Intellectual Property
           </h2>
           <p>
             Budly, including its design, code, features, and content, is the
@@ -173,7 +195,7 @@ export default function BudlyTermsOfUse() {
 
         <section className="space-y-4">
           <h2 className="text-xl font-semibold text-white">
-            7. Disclaimers & Limitation of Liability
+            8. Disclaimers & Limitation of Liability
           </h2>
           <p>
             Budly is provided &quot;as is&quot; and &quot;as available&quot;
@@ -195,7 +217,7 @@ export default function BudlyTermsOfUse() {
 
         <section className="space-y-4">
           <h2 className="text-xl font-semibold text-white">
-            8. Termination
+            9. Termination
           </h2>
           <p>
             You may stop using Budly at any time by canceling your subscription
@@ -210,7 +232,54 @@ export default function BudlyTermsOfUse() {
 
         <section className="space-y-4">
           <h2 className="text-xl font-semibold text-white">
-            9. Changes to These Terms
+            10. Governing Law
+          </h2>
+          <p>
+            These Terms shall be governed by and construed in accordance with
+            the laws of Brazil, without regard to its conflict of law
+            provisions. Any disputes arising from these terms shall be subject
+            to the exclusive jurisdiction of the courts of Brazil.
+          </p>
+        </section>
+
+        <section className="space-y-4">
+          <h2 className="text-xl font-semibold text-white">
+            11. General Provisions
+          </h2>
+          <p>
+            If any provision of these Terms is found to be unenforceable or
+            invalid, that provision shall be limited or eliminated to the
+            minimum extent necessary, and the remaining provisions shall
+            continue in full force and effect.
+          </p>
+          <p>
+            These Terms of Use, together with the{" "}
+            <a
+              href="/budly/privacy-policy"
+              className="text-blue-400 underline hover:text-blue-300"
+            >
+              Privacy Policy
+            </a>
+            , constitute the entire agreement between you and Giuliano Accorsi
+            regarding your use of Budly.
+          </p>
+        </section>
+
+        <section className="space-y-4">
+          <h2 className="text-xl font-semibold text-white">
+            12. Apple Third-Party Beneficiary
+          </h2>
+          <p>
+            You acknowledge and agree that Apple Inc. is a third-party
+            beneficiary of these Terms of Use and, upon your acceptance, Apple
+            will have the right to enforce these terms against you as a
+            third-party beneficiary thereof.
+          </p>
+        </section>
+
+        <section className="space-y-4">
+          <h2 className="text-xl font-semibold text-white">
+            13. Changes to These Terms
           </h2>
           <p>
             We may update these Terms of Use from time to time. Changes will be
@@ -220,7 +289,7 @@ export default function BudlyTermsOfUse() {
         </section>
 
         <section className="space-y-4">
-          <h2 className="text-xl font-semibold text-white">10. Contact</h2>
+          <h2 className="text-xl font-semibold text-white">14. Contact</h2>
           <p>
             If you have any questions about these Terms of Use, please contact:
           </p>
