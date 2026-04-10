@@ -101,7 +101,9 @@ export default function BudlyTermsOfUse() {
             convert to a paid subscription and your Apple ID account will be
             charged unless you cancel at least 24 hours before the trial ends.
             Any unused portion of a free trial period will be forfeited when you
-            purchase a subscription.
+            purchase a subscription. Free trials are offered at our sole
+            discretion and may be modified, shortened, or discontinued at any
+            time without prior notice.
           </p>
         </section>
 
