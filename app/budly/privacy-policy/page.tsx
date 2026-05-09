@@ -19,10 +19,10 @@ export default function BudlyPrivacyPolicy() {
             Privacy Policy — Budly
           </h1>
           <p className="mt-1 text-sm text-neutral-500">
-            Effective date: March 24, 2026
+            Effective date: May 10, 2026
           </p>
           <p className="text-sm text-neutral-500">
-            Last updated: March 24, 2026
+            Last updated: May 10, 2026
           </p>
         </header>
 
@@ -102,6 +102,55 @@ export default function BudlyPrivacyPolicy() {
             We do not collect usage analytics, behavioral data, or advertising
             identifiers.
           </p>
+
+          <h3 className="text-lg font-medium text-neutral-200">
+            AI Chat Data
+          </h3>
+          <p>
+            Budly includes an in-app AI assistant (&quot;Budly Chat&quot;)
+            powered by Google&apos;s Gemini model, accessed through Firebase AI
+            Logic on the Vertex AI backend. When you send a message to the
+            assistant, the following data is transmitted to Google Cloud
+            (Vertex AI) for processing:
+          </p>
+          <ul className="list-disc pl-6 space-y-1">
+            <li>
+              The text of the messages you write in the chat
+            </li>
+            <li>
+              Recent chat history from the current conversation (used as
+              context for the reply)
+            </li>
+            <li>
+              Aggregated financial summaries returned by the assistant&apos;s
+              built-in tools (e.g., totals per category, recent expenses,
+              active trips) when the model requests them to answer your
+              question
+            </li>
+            <li>
+              Optional &quot;facts about the user&quot; that you have asked
+              the assistant to remember
+            </li>
+          </ul>
+          <p>
+            Budly uses the <strong className="text-neutral-200">Vertex AI</strong>{" "}
+            backend specifically because, under the Google Cloud Platform terms,
+            Google does <strong className="text-neutral-200">not</strong> use
+            this data to train its foundation models, and the data is not used
+            to improve Google&apos;s products outside the scope of providing the
+            service.
+          </p>
+          <p>
+            Each chat request is signed by Firebase App Check (App Attest on
+            iOS, Play Integrity on Android) to prevent unauthorized use of our
+            backend.
+          </p>
+          <p>
+            Chat history and remembered facts are stored{" "}
+            <strong className="text-neutral-200">locally on your device only</strong>{" "}
+            and are not synchronized to Firebase Firestore. You can clear the
+            chat history at any time from within the chat screen.
+          </p>
         </section>
 
         <section className="space-y-4">
@@ -154,6 +203,23 @@ export default function BudlyPrivacyPolicy() {
                     Authenticate and secure your account
                   </td>
                   <td className={tableCellClass}>Email address</td>
+                </tr>
+                <tr>
+                  <td className={tableCellClass}>
+                    Answer questions in the AI chat assistant
+                  </td>
+                  <td className={tableCellClass}>
+                    Chat messages, recent chat context, financial summaries
+                    requested by the assistant&apos;s tools
+                  </td>
+                </tr>
+                <tr>
+                  <td className={tableCellClass}>
+                    Send local and remote notifications (e.g., budget reminders)
+                  </td>
+                  <td className={tableCellClass}>
+                    Firebase Cloud Messaging device token
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -245,6 +311,30 @@ export default function BudlyPrivacyPolicy() {
                     Device attestation tokens
                   </td>
                 </tr>
+                <tr>
+                  <td className={tableCellClass}>
+                    Firebase AI Logic (Vertex AI backend)
+                  </td>
+                  <td className={tableCellClass}>
+                    Power the in-app AI chat assistant (Gemini model)
+                  </td>
+                  <td className={tableCellClass}>
+                    Chat messages, conversation context, aggregated financial
+                    summaries requested via tool calls. Vertex AI does not use
+                    this data to train foundation models.
+                  </td>
+                </tr>
+                <tr>
+                  <td className={tableCellClass}>
+                    Firebase Cloud Messaging (FCM)
+                  </td>
+                  <td className={tableCellClass}>
+                    Deliver push notifications (e.g., budget reminders)
+                  </td>
+                  <td className={tableCellClass}>
+                    Device push token
+                  </td>
+                </tr>
               </tbody>
             </table>
           </div>
@@ -288,7 +378,8 @@ export default function BudlyPrivacyPolicy() {
                 <tr>
                   <td className={tableCellClass}>Notifications</td>
                   <td className={tableCellClass}>
-                    Local reminders for budgeting goals
+                    Local reminders for budgeting goals and push notifications
+                    delivered via Firebase Cloud Messaging
                   </td>
                   <td className={tableCellClass}>Optional</td>
                 </tr>
@@ -382,6 +473,22 @@ export default function BudlyPrivacyPolicy() {
               <strong className="text-neutral-200">Crash reports:</strong>{" "}
               Diagnostic data in Firebase Crashlytics is retained for 90 days
               per Google&apos;s default retention policy.
+            </li>
+            <li>
+              <strong className="text-neutral-200">
+                Chat history and remembered facts:
+              </strong>{" "}
+              Stored locally on your device only. They are not synchronized to
+              the cloud and are removed when you clear the chat, delete the
+              app, or delete your account.
+            </li>
+            <li>
+              <strong className="text-neutral-200">
+                AI chat requests on Google Cloud:
+              </strong>{" "}
+              Vertex AI may temporarily log requests for abuse monitoring per
+              Google Cloud&apos;s standard policies. This data is not used to
+              train Google&apos;s foundation models.
             </li>
           </ul>
         </section>

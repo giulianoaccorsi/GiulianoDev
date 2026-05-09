@@ -14,10 +14,10 @@ export default function BudlyTermsOfUse() {
             Terms of Use — Budly
           </h1>
           <p className="mt-1 text-sm text-neutral-500">
-            Effective date: April 10, 2026
+            Effective date: May 10, 2026
           </p>
           <p className="text-sm text-neutral-500">
-            Last updated: April 11, 2026
+            Last updated: May 10, 2026
           </p>
         </header>
 
@@ -145,6 +145,15 @@ export default function BudlyTermsOfUse() {
             Settings &gt; Delete Account. Deletion is irreversible.
           </p>
           <p>
+            Budly also includes an in-app AI assistant powered by Google&apos;s
+            Gemini model via Firebase AI Logic (Vertex AI backend). When you
+            use the assistant, your chat messages and aggregated financial
+            summaries requested by the assistant&apos;s tools are transmitted
+            to Google Cloud for processing. Under Google Cloud terms, this
+            data is not used to train Google&apos;s foundation models. Chat
+            history is stored locally on your device only.
+          </p>
+          <p>
             For details on how we handle your data, see our{" "}
             <a
               href="/budly/privacy-policy"
@@ -206,6 +215,14 @@ export default function BudlyTermsOfUse() {
             Budly is a personal finance tracking tool and does not provide
             financial, tax, investment, or legal advice. You are solely
             responsible for your financial decisions.
+          </p>
+          <p>
+            The in-app AI assistant generates responses using a third-party
+            generative model and may produce inaccurate, incomplete, or
+            misleading information. Its responses are provided for
+            informational purposes only and must not be relied upon as
+            professional advice. Always verify important figures against your
+            own records.
           </p>
           <p>
             To the maximum extent permitted by applicable law, Giuliano Accorsi
