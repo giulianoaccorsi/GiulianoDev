@@ -17,7 +17,7 @@ export default function BudlyTermsOfUse() {
             Effective date: May 10, 2026
           </p>
           <p className="text-sm text-neutral-500">
-            Last updated: May 10, 2026
+            Last updated: May 16, 2026
           </p>
         </header>
 
@@ -32,12 +32,11 @@ export default function BudlyTermsOfUse() {
 
         <section className="space-y-4">
           <h2 className="text-xl font-semibold text-white">
-            1. Acceptance of Terms
+            1. Acceptance of Terms and Eligibility
           </h2>
           <p>
-            By creating an account or using Budly, you confirm that you are at
-            least 13 years of age (or the minimum age required in your
-            jurisdiction) and agree to these Terms of Use and our{" "}
+            By creating an account or using Budly, you agree to these Terms of
+            Use and our{" "}
             <a
               href="/budly/privacy-policy"
               className="text-blue-400 underline hover:text-blue-300"
@@ -45,6 +44,37 @@ export default function BudlyTermsOfUse() {
               Privacy Policy
             </a>
             . If you do not agree to these terms, do not use the app.
+          </p>
+          <p>
+            <strong className="text-neutral-200">Eligibility:</strong> Budly is
+            intended for adults capable of entering into a binding contract
+            under the laws of their jurisdiction. By using Budly you confirm
+            that:
+          </p>
+          <ul className="list-disc pl-6 space-y-1">
+            <li>
+              You are at least 18 years old; or
+            </li>
+            <li>
+              You are between the legal minimum age of your jurisdiction
+              (13 in most cases; 16 in many EU/EEA Member States; subject to
+              the Brazilian rules described below) and 18, and you have the
+              verifiable consent of a parent or legal guardian to use the app
+              and to be bound by these Terms.
+            </li>
+          </ul>
+          <p>
+            <strong className="text-neutral-200">
+              Brazilian users (LGPD Art. 14):
+            </strong>{" "}
+            children (under 12) may not create an account. Adolescents (12 to
+            17) may use Budly only with specific and prominent consent from a
+            parent or legal guardian and only in the adolescent&apos;s best
+            interest.
+          </p>
+          <p>
+            If we learn that an account has been created in violation of these
+            requirements, we will terminate it and delete the associated data.
           </p>
         </section>
 
@@ -68,17 +98,40 @@ export default function BudlyTermsOfUse() {
           </ul>
           <p>
             Prices may vary by region. The actual price displayed in the App
-            Store at the time of purchase applies. Payment is charged to your
-            Apple ID account at the confirmation of purchase. All payments are
-            processed by Apple through your Apple ID. Budly does not collect or
-            store any payment or billing information.
+            Store or Google Play at the time of purchase applies. All payments
+            are processed by Apple (App Store / Apple ID) on iOS, or by Google
+            (Google Play Billing) on Android. Subscription entitlement is
+            managed through RevenueCat, Inc. Budly does not collect or store
+            any payment instrument, card number, or billing information.
           </p>
           <p>
-            Subscriptions automatically renew unless canceled at least 24 hours
-            before the end of the current billing period. Your account will be
-            charged for renewal within 24 hours prior to the end of the current
-            period. You can manage and cancel your subscription at any time in
-            your device&apos;s Settings &gt; Apple ID &gt; Subscriptions.
+            <strong className="text-neutral-200">Auto-renewal:</strong>{" "}
+            subscriptions automatically renew unless canceled at least 24
+            hours before the end of the current billing period. Your account
+            will be charged for renewal within 24 hours prior to the end of
+            the current period. The renewal price is the price of the
+            equivalent plan in the store on the day of renewal.
+          </p>
+          <p>
+            <strong className="text-neutral-200">Cancellation:</strong> you
+            can manage and cancel your subscription at any time:
+          </p>
+          <ul className="list-disc pl-6 space-y-1">
+            <li>
+              <strong className="text-neutral-200">iOS:</strong> Settings
+              &gt; [your name] &gt; Subscriptions &gt; Budly.
+            </li>
+            <li>
+              <strong className="text-neutral-200">Android:</strong> Play
+              Store app &gt; Profile &gt; Payments &amp; subscriptions &gt;
+              Subscriptions &gt; Budly.
+            </li>
+          </ul>
+          <p>
+            Canceling stops the next renewal; you keep access until the end of
+            the current paid period. Deleting the app does{" "}
+            <strong className="text-neutral-200">not</strong> cancel the
+            subscription — you must cancel through the store.
           </p>
         </section>
 
@@ -112,20 +165,69 @@ export default function BudlyTermsOfUse() {
 
         <section className="space-y-4">
           <h2 className="text-xl font-semibold text-white">
-            4. Refunds
+            4. Refunds and Right of Withdrawal
           </h2>
           <p>
-            All purchases are processed by Apple. Refunds are handled by Apple
-            in accordance with their refund policy. To request a refund, visit{" "}
+            All purchases are processed by Apple or by Google Play. Refunds
+            are handled by the respective store in accordance with that
+            store&apos;s policy:
+          </p>
+          <ul className="list-disc pl-6 space-y-1">
+            <li>
+              <strong className="text-neutral-200">Apple (iOS):</strong>{" "}
+              <a
+                href="https://reportaproblem.apple.com"
+                className="text-blue-400 underline hover:text-blue-300"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                reportaproblem.apple.com
+              </a>
+            </li>
+            <li>
+              <strong className="text-neutral-200">
+                Google Play (Android):
+              </strong>{" "}
+              <a
+                href="https://support.google.com/googleplay/answer/2479637"
+                className="text-blue-400 underline hover:text-blue-300"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                support.google.com/googleplay/answer/2479637
+              </a>
+            </li>
+          </ul>
+          <p>
+            Budly does not process refunds directly and cannot issue refunds on
+            behalf of Apple or Google.
+          </p>
+          <p>
+            <strong className="text-neutral-200">
+              Brazilian consumers — right of withdrawal (CDC Art. 49):
+            </strong>{" "}
+            if you purchased the subscription from outside a physical
+            establishment (which includes all in-app purchases), you have{" "}
+            <strong className="text-neutral-200">7 days</strong> from the date
+            of purchase or activation to withdraw and receive a full refund.
+            To exercise this right, request the refund through the store
+            channel above and, if needed, contact us at{" "}
             <a
-              href="https://reportaproblem.apple.com"
+              href="mailto:support@budlyapp.app"
               className="text-blue-400 underline hover:text-blue-300"
-              target="_blank"
-              rel="noopener noreferrer"
             >
-              reportaproblem.apple.com
+              support@budlyapp.app
             </a>{" "}
-            or contact Apple Support. Budly does not process refunds directly.
+            so we can assist with the store request.
+          </p>
+          <p>
+            <strong className="text-neutral-200">EU/EEA consumers:</strong>{" "}
+            you have a 14-day right of withdrawal for digital services under
+            Directive 2011/83/EU, except where you have expressly consented to
+            immediate performance of the digital service and acknowledged that
+            you thereby lose the right of withdrawal. By starting to use a
+            paid Budly Pro feature during the withdrawal period, you provide
+            such consent and acknowledgement.
           </p>
         </section>
 
@@ -249,13 +351,28 @@ export default function BudlyTermsOfUse() {
 
         <section className="space-y-4">
           <h2 className="text-xl font-semibold text-white">
-            10. Governing Law
+            10. Governing Law and Jurisdiction
           </h2>
           <p>
             These Terms shall be governed by and construed in accordance with
-            the laws of Brazil, without regard to its conflict of law
-            provisions. Any disputes arising from these terms shall be subject
-            to the exclusive jurisdiction of the courts of Brazil.
+            the laws of the Federative Republic of Brazil, without regard to
+            its conflict of law provisions.
+          </p>
+          <p>
+            Any dispute arising out of or relating to these Terms or your use
+            of Budly shall be submitted to the exclusive jurisdiction of the
+            courts of the{" "}
+            <strong className="text-neutral-200">
+              District of Porto Alegre, Rio Grande do Sul, Brazil
+            </strong>
+            , with express waiver of any other, however privileged.
+          </p>
+          <p>
+            <strong className="text-neutral-200">Consumers:</strong> nothing
+            in this section prevents you from bringing an action in the courts
+            of your domicile when such a right is granted to you by mandatory
+            consumer-protection law (including the Brazilian C&oacute;digo de
+            Defesa do Consumidor and equivalent EU/EEA legislation).
           </p>
         </section>
 
@@ -284,13 +401,147 @@ export default function BudlyTermsOfUse() {
 
         <section className="space-y-4">
           <h2 className="text-xl font-semibold text-white">
-            12. Apple Third-Party Beneficiary
+            12. Additional Terms for the App Store (Apple) Version
           </h2>
           <p>
-            You acknowledge and agree that Apple Inc. is a third-party
-            beneficiary of these Terms of Use and, upon your acceptance, Apple
-            will have the right to enforce these terms against you as a
-            third-party beneficiary thereof.
+            The following terms apply only to the version of Budly downloaded
+            from the Apple App Store (the &quot;Licensed Application&quot;)
+            and are required by Apple Inc. (&quot;Apple&quot;) under the Apple
+            Developer Program License Agreement, Schedule 1. In the event of a
+            conflict with the rest of these Terms, this section prevails for
+            the App Store version.
+          </p>
+
+          <h3 className="text-lg font-medium text-neutral-200">
+            (a) Acknowledgement
+          </h3>
+          <p>
+            You acknowledge that these Terms of Use are concluded between you
+            and Giuliano Accorsi only, and not with Apple. Apple is not
+            responsible for the Licensed Application or its content.
+          </p>
+
+          <h3 className="text-lg font-medium text-neutral-200">
+            (b) Scope of License
+          </h3>
+          <p>
+            The license granted to you for the Licensed Application is a
+            limited, non-transferable license to use the Licensed Application
+            on any Apple-branded products that you own or control, and as
+            permitted by the Usage Rules set forth in the Apple Media Services
+            Terms and Conditions, except that the Licensed Application may be
+            accessed and used by other accounts associated with you via Family
+            Sharing or volume purchasing.
+          </p>
+
+          <h3 className="text-lg font-medium text-neutral-200">
+            (c) Maintenance and Support
+          </h3>
+          <p>
+            Giuliano Accorsi is solely responsible for providing any
+            maintenance and support services with respect to the Licensed
+            Application, as specified in these Terms or as required by
+            applicable law. You acknowledge that Apple has no obligation
+            whatsoever to furnish any maintenance or support services with
+            respect to the Licensed Application.
+          </p>
+
+          <h3 className="text-lg font-medium text-neutral-200">
+            (d) Warranty
+          </h3>
+          <p>
+            Giuliano Accorsi is solely responsible for any product warranties,
+            whether express or implied by law, to the extent not effectively
+            disclaimed. In the event of any failure of the Licensed
+            Application to conform to any applicable warranty, you may notify
+            Apple, and Apple will refund the purchase price (if any) for the
+            Licensed Application to you. To the maximum extent permitted by
+            applicable law, Apple will have no other warranty obligation
+            whatsoever with respect to the Licensed Application, and any
+            other claims, losses, liabilities, damages, costs or expenses
+            attributable to any failure to conform to any warranty will be
+            Giuliano Accorsi&apos;s sole responsibility.
+          </p>
+
+          <h3 className="text-lg font-medium text-neutral-200">
+            (e) Product Claims
+          </h3>
+          <p>
+            You and Giuliano Accorsi acknowledge that Giuliano Accorsi, not
+            Apple, is responsible for addressing any claims of yours or any
+            third party relating to the Licensed Application or your
+            possession and/or use of the Licensed Application, including, but
+            not limited to: (i) product liability claims; (ii) any claim that
+            the Licensed Application fails to conform to any applicable legal
+            or regulatory requirement; and (iii) claims arising under
+            consumer protection, privacy, or similar legislation, including
+            in connection with the Licensed Application&apos;s use of the
+            HealthKit or HomeKit frameworks (which Budly does not use).
+          </p>
+
+          <h3 className="text-lg font-medium text-neutral-200">
+            (f) Intellectual Property Rights
+          </h3>
+          <p>
+            You and Giuliano Accorsi acknowledge that, in the event of any
+            third-party claim that the Licensed Application or your
+            possession and use of the Licensed Application infringes that
+            third party&apos;s intellectual property rights, Giuliano
+            Accorsi, not Apple, will be solely responsible for the
+            investigation, defense, settlement, and discharge of any such
+            intellectual property infringement claim.
+          </p>
+
+          <h3 className="text-lg font-medium text-neutral-200">
+            (g) Legal Compliance
+          </h3>
+          <p>
+            You represent and warrant that (i) you are not located in a
+            country that is subject to a U.S. Government embargo, or that has
+            been designated by the U.S. Government as a &quot;terrorist
+            supporting&quot; country; and (ii) you are not listed on any U.S.
+            Government list of prohibited or restricted parties.
+          </p>
+
+          <h3 className="text-lg font-medium text-neutral-200">
+            (h) Developer Name and Address
+          </h3>
+          <p>
+            Any questions, complaints, or claims with respect to the Licensed
+            Application should be directed to:
+          </p>
+          <p>
+            Giuliano Accorsi
+            <br />
+            Porto Alegre, Rio Grande do Sul, Brazil
+            <br />
+            <a
+              href="mailto:support@budlyapp.app"
+              className="text-blue-400 underline hover:text-blue-300"
+            >
+              support@budlyapp.app
+            </a>
+          </p>
+
+          <h3 className="text-lg font-medium text-neutral-200">
+            (i) Third Party Terms of Agreement
+          </h3>
+          <p>
+            You must comply with applicable third-party terms of agreement
+            when using the Licensed Application (for example, your wireless
+            data service agreement).
+          </p>
+
+          <h3 className="text-lg font-medium text-neutral-200">
+            (j) Third Party Beneficiary
+          </h3>
+          <p>
+            You and Giuliano Accorsi acknowledge and agree that Apple, and
+            Apple&apos;s subsidiaries, are third-party beneficiaries of these
+            Terms of Use, and that, upon your acceptance of these Terms,
+            Apple will have the right (and will be deemed to have accepted
+            the right) to enforce these Terms against you as a third-party
+            beneficiary thereof.
           </p>
         </section>
 
@@ -308,17 +559,18 @@ export default function BudlyTermsOfUse() {
         <section className="space-y-4">
           <h2 className="text-xl font-semibold text-white">14. Contact</h2>
           <p>
-            If you have any questions about these Terms of Use, please contact:
+            If you have any questions about these Terms of Use, please
+            contact:
           </p>
           <p>
             <strong className="text-neutral-200">Giuliano Accorsi</strong>
             <br />
             Email:{" "}
             <a
-              href="mailto:giulianoaccorsi@gmail.com"
+              href="mailto:support@budlyapp.app"
               className="text-blue-400 underline hover:text-blue-300"
             >
-              giulianoaccorsi@gmail.com
+              support@budlyapp.app
             </a>
           </p>
         </section>
