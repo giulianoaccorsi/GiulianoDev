@@ -363,7 +363,7 @@ export default function BudlyTermsOfUse() {
             of Budly shall be submitted to the exclusive jurisdiction of the
             courts of the{" "}
             <strong className="text-neutral-200">
-              District of Porto Alegre, Rio Grande do Sul, Brazil
+              District of the Capital, State of São Paulo, Brazil
             </strong>
             , with express waiver of any other, however privileged.
           </p>
@@ -513,7 +513,7 @@ export default function BudlyTermsOfUse() {
           <p>
             Giuliano Accorsi
             <br />
-            Porto Alegre, Rio Grande do Sul, Brazil
+            São Paulo, SP, Brazil
             <br />
             <a
               href="mailto:support@budlyapp.app"
