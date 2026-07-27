@@ -24,16 +24,17 @@ export function About() {
           {/* Bio */}
           <div className="flex-1 space-y-4 text-muted-foreground">
             <p>
-              I&apos;m a mobile developer with a passion for building polished,
-              user-focused apps. My core expertise lies in native iOS development
-              with Swift and SwiftUI, and I also build cross-platform experiences
-              with Flutter and Dart.
+              I&apos;m a mobile developer focused on taking products from architecture
+              and persistence through accessibility, localization, and release. I
+              work natively with SwiftUI and build shared experiences with Flutter
+              when that trade off fits the product.
             </p>
             <p>
-              I care deeply about clean architecture, testable code, and
-              delightful interactions. Whether it&apos;s a personal finance
-              tracker or a social utility app, I approach every project with
-              attention to detail and a drive to ship quality software.
+              Recent work includes shipping SplitEasy on the App Store and building
+              PassMalta around deterministic offline content for theory test
+              preparation. Experience with NestJS, TypeScript, and PostgreSQL helps
+              me design the API and data boundaries around the client, not just the
+              screens on top.
             </p>
           </div>
 

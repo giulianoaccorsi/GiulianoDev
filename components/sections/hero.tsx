@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 import { SOCIAL_LINKS } from "@/lib/data";
@@ -53,8 +53,9 @@ export function Hero() {
             transition={{ delay: 0.4, duration: 0.6 }}
             className="mx-auto mb-8 max-w-3xl text-xl text-muted-foreground md:text-2xl"
           >
-            Crafting native iOS and cross-platform mobile experiences with clean
-            architecture and attention to detail.
+            I build reliable, offline first mobile products with SwiftUI and
+            Flutter, from architecture and persistence to accessibility and
+            release.
           </motion.p>
 
           {/* Buttons */}
@@ -64,31 +65,28 @@ export function Hero() {
             transition={{ delay: 0.5, duration: 0.6 }}
             className="mb-12 flex flex-wrap justify-center gap-4"
           >
-            <Button
-              size="lg"
-              className="gap-2"
-              onClick={() =>
-                document
-                  .getElementById("contact")
-                  ?.scrollIntoView({ behavior: "smooth" })
-              }
+            <motion.a
+              href="#contact"
+              whileHover={{ y: -2 }}
+              whileTap={{ scale: 0.98 }}
+              className={buttonVariants({ size: "lg", className: "gap-2" })}
             >
               <Mail className="h-4 w-4" />
               Get in Touch
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="gap-2"
-              onClick={() =>
-                document
-                  .getElementById("projects")
-                  ?.scrollIntoView({ behavior: "smooth" })
-              }
+            </motion.a>
+            <motion.a
+              href="#projects"
+              whileHover={{ y: -2 }}
+              whileTap={{ scale: 0.98 }}
+              className={buttonVariants({
+                size: "lg",
+                variant: "outline",
+                className: "gap-2",
+              })}
             >
               View Projects
               <ArrowDown className="h-4 w-4" />
-            </Button>
+            </motion.a>
           </motion.div>
 
           {/* Social icons */}

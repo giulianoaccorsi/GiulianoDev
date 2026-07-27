@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { ProjectVideo } from "@/components/project-video";
 import { PROJECTS } from "@/lib/data";
 
 const badgeContainerVariants = {
@@ -23,7 +23,7 @@ const badgeItemVariants = {
 export function Projects() {
   return (
     <section id="projects" className="px-6 py-24">
-      <div className="mx-auto max-w-4xl">
+      <div className="mx-auto max-w-5xl">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -50,44 +50,38 @@ export function Projects() {
                 project.video ? "flex flex-col md:flex-row" : ""
               }`}
             >
-              {/* Demo area */}
               {project.video ? (
                 <div className="flex shrink-0 items-center justify-center p-6 md:w-80 md:p-8">
-                  <video
+                  <ProjectVideo
                     src={project.video}
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    className="h-auto max-h-[480px] rounded-xl shadow-2xl"
+                    poster="/media/spliteasy-poster.png"
+                    label={`${project.name} app demo`}
                   />
                 </div>
-              ) : (project.image ? (
+              ) : project.image ? (
                 <motion.div
                   whileHover={{ scale: 1.02 }}
                   transition={{ type: "spring", stiffness: 300 }}
-                  className="flex aspect-video items-center justify-center overflow-hidden bg-muted"
+                  className="flex aspect-[8/5] items-center justify-center overflow-hidden bg-muted"
                 >
                   <Image
                     src={project.image}
-                    alt={`${project.name} screenshot`}
-                    width={800}
-                    height={450}
+                    alt={project.imageAlt ?? `${project.name} screenshot`}
+                    width={1600}
+                    height={1000}
                     className="h-full w-full object-cover"
                   />
                 </motion.div>
-              ) : (
-                <div className="flex aspect-video items-center justify-center bg-muted">
-                  <span className="text-sm text-muted-foreground">
-                    Screenshot / Video / GIF
-                  </span>
-                </div>
-              ))}
+              ) : null}
 
-              {/* Content */}
               <div className={`flex flex-1 flex-col justify-center p-6 ${
                 project.video ? "md:pl-2 md:pr-8" : ""
               }`}>
+                {project.status && (
+                  <p className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-emerald-400">
+                    {project.status}
+                  </p>
+                )}
                 <h3 className="mb-2 text-xl font-semibold text-foreground">
                   {project.name}
                 </h3>
@@ -95,7 +89,17 @@ export function Projects() {
                   {project.description}
                 </p>
 
-                {/* Tech badges */}
+                <ul className="mb-5 space-y-2 text-sm text-muted-foreground">
+                  {project.highlights.map((highlight) => (
+                    <li key={highlight} className="flex gap-2">
+                      <span aria-hidden="true" className="mt-1 text-emerald-400">
+                        •
+                      </span>
+                      <span>{highlight}</span>
+                    </li>
+                  ))}
+                </ul>
+
                 <motion.div
                   variants={badgeContainerVariants}
                   initial="hidden"
@@ -136,7 +140,7 @@ export function Projects() {
                       <Image
                         src="/media/github-badge.png"
                         alt="Available on GitHub"
-                        width={120}
+                        width={135}
                         height={40}
                         className="transition-opacity hover:opacity-80"
                       />
